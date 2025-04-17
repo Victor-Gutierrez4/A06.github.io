@@ -1,133 +1,89 @@
-/* Reset and semantic display */
 article, aside, figure, footer, header, nav, section {
     display: block;
 }
+
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-/* Base styling */
 html {
-    background-color: white;
+	background-color: white;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
     font-size: 87.5%;
-    width: 800px;
+    width: 600px;
     margin: 0 auto;
     border: 3px solid #800000;
     background-color: #fffded;
 }
 
-/* Links */
-a:focus,
-a:hover {
-    font-style: italic;
+a:focus, a:hover {
+	font-style: italic;
 }
 
-/* Header */
 header {
-    border-bottom: 3px solid #800000;
-    padding: 1.5em 0;
-    background-image: linear-gradient(
-        30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%
-    );
+	border-bottom: 3px solid #800000;
+	padding: 1.5em 0;
+	background-image: linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
 }
 header h1 {
-    color: #800000;
+	color: #800000;
 }
 header h2 {
-    font-style: italic;
+	font-style: italic;
 }
 header img {
-    float: left;
-    padding: 0 30px;
+	float: left;
+	padding: 0 30px;
 }
+
 .shadow {
-    text-shadow: 2px 2px 2px #800000;
+	text-shadow: 2px 2px 2px #800000;
 }
 
-/* Layout clearfix */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Section */
 section {
-    clear: left;
-    padding: 0 20px;
-    width: 525px;
-    float: left; /* changed from right */
+	clear: left;
+	padding: 0 2em;
 }
 section h1 {
-    color: #800000;
-    font-size: 150%;
-    padding: .5em 0 .25em;
+	color: #800000;
+	font-size: 150%;
+	padding: .5em 0 .25em;
 }
 section h2 {
-    font-size: 120%;
-    padding-bottom: .25em;
+	font-size: 120%;
+	padding-bottom: .25em;
 }
 section p {
-    padding-bottom: .5em;
+	padding-bottom: .5em;
 }
 section blockquote {
-    padding: 0 2em;
-    font-style: italic;
+	padding: 0 2em;
+	font-style: italic;
 }
 section ul {
-    padding: 0 0 1.5em 1.25em;
+	padding: 0 0 1.5em 1.25em;
 }
 section li {
-    padding-bottom: .35em;
+	padding-bottom: .35em;
+}
+section img {
+	padding-bottom: 1em;
 }
 
-/* Article */
-article {
-    border-top: 2px solid #800000;
-    border-bottom: 2px solid #800000;
-}
-article h1 {
-    color: black;
-}
-article img {
-    float: right;
-    margin: 1em 0 1em 1em;
-    border: 1px solid black;
-}
-
-/* Aside */
-aside {
-    width: 215px;
-    float: right; /* keep aside on the right */
-    padding-left: 20px;
-}
-aside h1 {
-    color: #800000;
-    font-size: 150%;
-    padding: .5em 0 .25em;
-}
-aside h2 {
-    font-size: 120%;
-    padding-bottom: .25em;
-}
-aside img {
-    padding-bottom: 1em;
-}
-
-/* Speakers section */
 #speakers {
-    border: 3px double #800000;
-    margin-bottom: .75em;
-    border-radius: 10px;
-    box-shadow: 5px 5px #ccc;
-    padding: .5em 0 .5em 2em;
-    background-color: white;
+	border: 3px double #800000;
+	margin-bottom: .75em;
+	border-radius: 10px;
+	box-shadow: 5px 5px;
+	padding: .5em 0 .5em 2em;
+	background-color: white;
 }
+
 #speakers img {
     width: 200px;
     height: auto;
@@ -135,7 +91,6 @@ aside img {
     margin-bottom: 1em;
 }
 
-/* Main image styling */
 main img {
     width: 200px;
     height: auto;
@@ -143,15 +98,11 @@ main img {
     margin-bottom: 1em;
 }
 
-/* Footer */
 footer {
-    border-top: 3px solid #800000;
-    background-color: #800000;
-    padding: 1.5em 0;
-    clear: both;
+	border-top: 3px solid #800000;
 }
+
 footer p {
-    color: white;
-    text-align: center;
-    padding: 1em 0;
+	padding: 1em 0;
+	text-align: center;
 }
