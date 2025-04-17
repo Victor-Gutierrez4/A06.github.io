@@ -23,6 +23,12 @@ body {
 a:focus, a:hover {
     font-style: italic;
 }
+main h1 {
+    border-top: 3px solid #800000;
+    border-bottom: 3px solid #800000;
+    padding: 0.5em 0;
+    text-align: center;
+}
 
 header {
     border-bottom: 3px solid #800000;
