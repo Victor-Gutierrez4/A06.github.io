@@ -31,7 +31,7 @@ header {
 	    30deg, #fffded 0%, #fffded 30%, white 50%, #fffded 80%, #fffded 100%);
 }
 header h1 {
-	color: #800000;
+	color: #fffded;
 }
 header h2 {
 	font-style: italic;
