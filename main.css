@@ -10,7 +10,7 @@ article, aside, figure, footer, header, nav, section {
 
 /* Base styling */
 html {
-    background-color: #f0f8ff; /* Soft "wild" tone */
+    background-color: #f0f8ff; /* light background */
 }
 
 body {
@@ -18,13 +18,12 @@ body {
     font-size: 87.5%;
     width: 600px;
     margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #f0f8ff;
+    border: 3px solid #666666; /* neutral gray border */
+    background-color: #f0f8ff; /* soft background */
 }
 
-/* Link focus/hover */
-a:focus,
-a:hover {
+/* Link styling */
+a:focus, a:hover {
     font-style: italic;
 }
 
@@ -32,7 +31,9 @@ a:hover {
 header {
     border-bottom: 3px solid #800000;
     padding: 1.5em 0 2em;
-    background-color: #fffded;
+    background-image: linear-gradient(
+        30deg, #fffded 0%, white 50%, #fffded 100%
+    ); /* lighter gradient */
 }
 
 header h1 {
@@ -55,7 +56,7 @@ header img {
     padding: 0 30px;
 }
 
-/* Shadowed text */
+/* Text shadow */
 .shadow {
     text-shadow: 2px 2px 2px #800000;
 }
@@ -73,16 +74,16 @@ section {
 section h1 {
     color: #800000;
     font-size: 150%;
-    padding: 0.5em 0 0.25em;
+    padding: .5em 0 .25em;
 }
 
 section h2 {
     font-size: 120%;
-    padding-bottom: 0.25em;
+    padding-bottom: .25em;
 }
 
 section p {
-    padding-bottom: 0.5em;
+    padding-bottom: .5em;
 }
 
 section blockquote {
@@ -95,7 +96,7 @@ section ul {
 }
 
 section li {
-    padding-bottom: 0.35em;
+    padding-bottom: .35em;
 }
 
 section img {
@@ -105,14 +106,21 @@ section img {
 /* Speaker section */
 #speakers {
     border: 3px double #800000;
-    margin-bottom: 0.75em;
+    margin-bottom: .75em;
     border-radius: 10px;
-    box-shadow: 5px 5px;
-    padding: 0.5em 0 0.5em 2em;
+    box-shadow: 5px 5px #ccc;
+    padding: .5em 0 .5em 2em;
     background-color: white;
 }
 
-#speakers img,
+#speakers img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* Main image styling */
 main img {
     width: 200px;
     height: auto;
@@ -123,7 +131,7 @@ main img {
 /* Footer styling */
 footer {
     border-top: 3px solid #800000;
-    background-color: #931420;
+    background-color: #800000;
     padding: 1.5em 0;
     clear: both;
 }
